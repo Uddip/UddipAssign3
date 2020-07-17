@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
+  imgSrc;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.rollDice();
+  }
+
+  rollDice() {
+    let random = Math.floor((Math.random() * 6) + 1);
+    this.imgSrc = "../assets/dice/side_" + random + ".png";
   }
 
 }
