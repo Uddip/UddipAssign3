@@ -17,7 +17,7 @@ export class ContentComponent implements OnInit {
 
   rollDice() {
     let random = Math.floor((Math.random() * 6) + 1);
-    this.imgSrc = "../assets/dice/side_" + random + ".png";
+    this.imgSrc = "assets/dice/side_" + random + ".png";
   }
 
 }
